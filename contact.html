@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Lavacar Hermanos Rodriguez</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/imglavacar/logo10.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+ <link  href="assets/css/formulario.css" rel="stylesheet">
+ <script src="js/apiProvincias.js"></script>
+ 
+ <!--script-->
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/car_23773.png" alt=""> 
+        <h1>Lavacar Hermanos Rodríguez</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="about.html" target="_blank">Acerca de</a></li>
+          <li class="dropdown"><a href="#"><span>Galería</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="gallery.html" target="_blank">Sedan</a></li>
+              <li><a href="gallery.html" target="_blank">Pickup</a></li>
+              <li><a href="gallery.html" target="_blank">Motocicletas</a></li>
+              <li><a href="gallery.html" target="_blank">Bicicletas</a></li>
+              <li><a href="gallery.html" target="_blank">Pulido</a></li>
+              <li><a href="gallery.html" target="_blank">Tapiceria</a></li>
+              <li class="dropdown"><a href="#"><span>Otros</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="gallery.html" target="_blank">1Cuadraciclos</a></li>
+                  <li><a href="gallery.html" target="_blank">Alfombras</a></li>
+                  <li><a href="gallery.html" target="_blank">Accesorios</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" data-aos="fade" data-aos-delay="1500">
+
+    <!-- ======= End Page Header ======= -->
+    <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>Contact</h2>
+            <p>Tenemos servicio de cita previa para mayor comodidad del cliente</p>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Header -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Ubicación:</h4>
+                <p>50 mts sur del banco popular de Santo Domingo de Heredia, frente al costado oeste del sucursal de la CCSS</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>lavacar26rod@gmail.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3">
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
+              <div>
+                <h4>Llamar al:</h4>
+                <p>+506 86760366</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+          <style>
+             #app {
+    background-color: #2b2929;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input, select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  button {
+    background-color: #35cc74;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+          </style>
+          <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+        </head>
+        <body>
+          <div id="app">
+            <form @submit.prevent="submitForm">
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" id="nombre" v-model="formData.nombre">
+              <span v-if="errors.nombre" class="error-message">{{ errors.nombre }}</span>
+              <br>
+              
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" v-model="formData.email">
+              <span v-if="errors.email" class="error-message">{{ errors.email }}</span>
+              <br>
+        
+              <label for="fechaEntrega">Fecha de Cita:</label>
+              <input type="date" id="fechaEntrega" v-model="formData.fechaEntrega">
+              <span v-if="errors.fechaEntrega" class="error-message">{{ errors.fechaEntrega }}</span>
+              <br>
+              
+              <label for="genero">Género:</label>
+              <select id="genero" v-model="formData.genero">
+                <option value="">Seleccione</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+              </select>
+              <span v-if="errors.genero" class="error-message">{{ errors.genero }}</span>
+              <br>
+              
+              <label for="cantProductos">Cantidad de Carros:</label>
+              <input type="number" id="cantProductos" v-model="formData.cantProductos">
+              <span v-if="errors.cantProductos" class="error-message">{{ errors.cantProductos }}</span>
+              <br>
+              
+              <label for="provincias">Provincia:</label>
+              <input type="text" id="provincias" v-model="formData.provincias">
+              <span v-if="errors.provincias" class="error-message">{{ errors.provincias }}</span>
+              <br>
+              
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        
+          <script>
+            const app = new Vue({
+              el: '#app',
+              data: {
+                formData: {
+                  nombre: '',
+                  email: '',
+                  fechaEntrega: null,
+                  genero: '',
+                  cantProductos: null,
+                  provincias: ''
+                },
+                errors: {}
+              },
+              methods: {
+                submitForm() {
+                  this.errors = {};
+        
+                  if (!this.formData.nombre) {
+                    this.errors.nombre = 'Por favor ingresa tu nombre completo.';
+                  }
+        
+                  if (!this.formData.email) {
+                    this.errors.email = 'Por favor ingresa tu correo electrónico.';
+                  } else if (!/\S+@\S+\.\S+/.test(this.formData.email)) {
+                    this.errors.email = 'Por favor ingresa un correo electrónico válido.';
+                  }
+        
+                  if (!this.formData.fechaEntrega) {
+                    this.errors.fechaEntrega = 'Por favor ingrese una fecha de Entrega.';
+                  }
+        
+                  if (!this.formData.genero) {
+                    this.errors.genero = 'Por favor seleccione un género.';
+                  }
+        
+                  if (!this.formData.cantProductos) {
+                    this.errors.cantProductos = 'Por favor seleccione la cantidad de productos deseados.';
+                  }
+        
+                  if (!this.formData.provincias) {
+                    this.errors.provincias = 'Por favor seleccione una provincia.';
+                  }
+        
+                  // Agrega más lógica de validación aquí según tus requisitos
+        
+                  if (Object.keys(this.errors).length === 0) {
+                    alert('Formulario válido, enviando datos...');
+                    // Agrega aquí la lógica para enviar los datos del formulario al servidor
+                  }
+                }
+              }
+            });
+          </script>
+    </section><!-- End Contact Section -->
+    <div  class="pb-2  text-center" class="header-social-links">
+      <p>Encuentranos en <a href="https://www.facebook.com/HnosRodriguezc/?locale=es_LA" class="facebook"><i class="bi bi-facebook" width ="20" height ="20"></i></a>
+        <a href="https://www.instagram.com/lavacarhnosrodriguez61/?igshid=MzRlODBiNWFlZA%3D%3D" class="instagram"><i class="bi bi-instagram"></i></a></p>
+      
+      <p>Envia un WhatsApp</p>
+      <a href="https://api.whatsapp.com/send?phone=50686760366&text=Enlace%3A%0Ahttps%3A%2F%2Ffb.me%2Fh4atVlKnM%0A%0AVi%20esto%20en%20Facebook...&app=facebook">
+        <img src="assets/imglavacar/whatsapp_icon-icons.com_65542.png" alt=""  width="20" height="20">
+      
+    </div>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>HnosRodríguez</span></strong>. Todos los derechos reservados
+      </div>
+      <div class="credits">
+       
+        Proyecto UTN <a href="#">Ivonne Guzmán Salas</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader">
+    <div class="line"></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/609bb6bc51.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">emailjs.init('B0ZgrWiXE6f86eD_E')</script>
+  <script src="js/contacto.js"></script>
+  <script src="CSS/contacto.css"></script>
+  <script src="js/apiProvincias.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
